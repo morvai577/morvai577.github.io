@@ -67,15 +67,33 @@ body, html {
     text-transform: uppercase;
 }
 
+.imagesCircle  {
+  width: 400px; height: 400px;
+}
+
+.spacer {
+    display: inline-block;
+    height: 100px;
+}
+
+.borderCircle {
+  border-color: #424242;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 50%;
+}
+
 .ptext .border {
     background-color: #CC5A40;
     color: #fff;
     padding: 20px;
+    margin-top: 5%;
 }
 
 .ptext .border.trans{
     background-color: transparent;
 }
+
 
 /* Disable Parallax Effect for Mobile Devices */
 @media(max-width: 568px) {
