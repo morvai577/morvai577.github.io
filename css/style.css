@@ -8,6 +8,24 @@ body, html {
     color: #666;
 }
 
+.imagesCircle {
+    display: inline-block;
+    margin-left: 35%;
+    margin-top: 20%;
+    width: 192px;
+    height: 192px;
+    border-radius: 50%;
+    border-color: #424242;
+    border-width: 3px;
+    border-style: solid;
+}
+
+/*
+.borderCircle {
+
+}
+*/
+
 
 .pimg1, .pimg2, .pimg3 {
     position: relative;
@@ -15,30 +33,44 @@ body, html {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
     /*
         fixed = parallax effect
         scroll = normal
 
     */
-
     background-attachment: fixed;
 }
 
-
-.pimg1{
-    background-image: url('../img/1.jpeg');
+.pimg1 {
+    background-image: url('https://github.com/morvai577/morvai577.github.io/blob/master/img/1.jpeg?raw=true');
     min-height: 100%;
 }
 
-.pimg2{
-    background-image: url('../img/2.jpeg');
-    min-height: 400px;
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
 }
 
-.pimg3{
-    background-image: url('../img/3.jpeg');
-    min-height: 400px;
+.spacer {
+    display: inline-block;
+    height: 100px;
+}
+
+.ptext .border {
+    background-color: #CC5A40;
+    color: #fff;
+    padding: 20px;
+    margin-top: 5%;
+}
+
+.ptext .border.trans {
+    background-color: transparent;
 }
 
 .section {
@@ -56,47 +88,13 @@ body, html {
     color: #ddd;
 }
 
-.ptext {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #000;
-    font-size: 27px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
-}
-
-.imagesCircle  {
-  width: 400px; height: 400px;
-}
-
-.spacer {
-    display: inline-block;
-    height: 100px;
-}
-
-.borderCircle {
-  border-color: #424242;
-  border-width: 3px;
-  border-style: solid;
-  border-radius: 50%;
-}
-
-.ptext .border {
-    background-color: #CC5A40;
-    color: #fff;
-    padding: 20px;
-    margin-top: 5%;
-}
-
-.ptext .border.trans{
-    background-color: transparent;
-}
-
-
 /* Disable Parallax Effect for Mobile Devices */
 @media(max-width: 568px) {
+    .imagesCircle {
+        margin-left: 25%;
+        margin-top: 32%;
+    }
+
     .pimg1, .pimg2, .pimg3 {
         background-attachment: scroll;
     }
