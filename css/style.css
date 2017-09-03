@@ -88,6 +88,18 @@ body, html {
     color: #ddd;
 }
 
+.column-one {
+    display: flex;
+}
+
+.my-photo {
+    flex: 1;
+}
+
+.about-col{
+    flex: 1;
+}
+
 /* Disable Parallax Effect for Mobile Devices */
 @media(max-width: 568px) {
     .imagesCircle {
@@ -98,4 +110,9 @@ body, html {
     .pimg1, .pimg2, .pimg3 {
         background-attachment: scroll;
     }
+
+    .column-one {
+        display: block;
+    }
+
 }
