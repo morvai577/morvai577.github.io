@@ -64,7 +64,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('img/auckland.jpg') no-repeat top center;
+  background: url('../img/auckland.jpg') no-repeat center center;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -167,15 +167,15 @@ a.social {
 }
 
 a.twitter {
-  background-image: url(img/twitter.svg);
+  background-image: url(../img/twitter.svg);
 }
 
 a.linkedin {
-  background-image: url(img/linkedin.svg);
+  background-image: url(../img/linkedin.svg);
 }
 
 a.github {
-  background-image: url(img/github.svg);
+  background-image: url(../img/github.svg);
 }
 
 a.social:hover {
